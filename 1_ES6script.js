@@ -175,5 +175,54 @@
     };
     // Only change code above this line
     };
+
+    16.Write Concise Declarative Functions with ES6
+    // Only change code below this line
+    const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+    return this.gear = newGear;
+    }
+    };
+    // Only change code above this line
+    bicycle.setGear(3);
+    console.log(bicycle.gear);
+
+    17.Use class Syntax to Define a Constructor Function
+    // Only change code below this line
+    class Vegetable{
+    constructor(name){
+    this.name = name;
+    }
+    }
+    // Only change code above this line
+
+    const carrot = new Vegetable('carrot');
+    console.log(carrot.name); // Should display 'carrot'
+
+    18. Use getters and setters to Control Access to an Object
+    class Thermostat {
+    constructor(fahrenheit) {
+    this._fahrenheit = fahrenheit;
+    }
+  
+    get temperature() {
+    return (5 / 9) * (this._fahrenheit - 32);
+    }
+  
+    set temperature(celsius) {
+    return this._fahrenheit = (celsius * 9.0) / 5 + 32;
+    }
+    }
+
+    19.Use export to Share a Code Block
+    export const uppercaseString = (string) => {
+    return string.toUpperCase();
+    }
+
+    export const lowercaseString = (string) => {
+    return string.toLowerCase()
+    }
+
   */}
 </script>

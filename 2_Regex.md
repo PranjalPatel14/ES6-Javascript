@@ -1,43 +1,3 @@
-## 1. Using the Test Method
-    let myString = "Hello, World!";
-    let myRegex = /Hello/;
-    let result = myRegex.test(myString); // Change this line
-
-## 2. Match Literal Strings
-    let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
-    let waldoRegex = /Waldo/; // Change this line
-    let result = waldoRegex.test(waldoIsHiding);
-
-## 3. Match a Literal String with Different Possibilities
-    let petString = "James has a pet cat.";
-    let petRegex = /dog|cat|bird|fish/; // Change this line
-    let result = petRegex.test(petString);
-
-## 4. Ignore Case While Matching
-    let myString = "freeCodeCamp";
-    let fccRegex = /freeCodeCamp/i; // Change this line
-    let result = fccRegex.test(myString);
-
-## 5. Extract Matches
-    let extractStr = "Extract the word 'coding' from this string.";
-    let codingRegex = /coding/;
-    let result = extractStr.match(codingRegex);
-
-## 6.Find More Than the First Match
-    let twinkleStar = "Twinkle, twinkle, little star";
-    let starRegex = /Twinkle/gi; // Change this line
-    let result = twinkleStar.match(starRegex); // Change this line
-
-## 7.Match Anything with Wildcard Period
-    let exampleStr = "Let's have fun with regular expressions!";
-    let unRegex = /.un/; // Change this line
-    let result = unRegex.test(exampleStr);
-
-## 8.Match Single Character with Multiple Possibilities
-    let quoteSample =
-    "Beware of bugs in the above code; I have only proved it correct, not tried it.";
-    let vowelRegex = /[aeiou]/gi; // Change this line
-    let result = quoteSample.match(vowelRegex); // Change this line
 
 ## 9.Match Letters of the Alphabet
     let quoteSample = "The quick brown fox jumps over the lazy dog.";
@@ -82,4 +42,44 @@
     let caboose = "The last car on a train is the caboose";
     let lastRegex = /caboose$/; // Change this line
     let result = lastRegex.test(caboose);
-    
+
+## 18.Match All Letters and Numbers
+    let quoteSample = "The five boxing wizards jump quickly.";
+    let alphabetRegexV2 = /\w/g; // Change this line
+    let result = quoteSample.match(alphabetRegexV2).length;
+
+## 19.Match Everything But Letters and Numbers
+    let quoteSample = "The five boxing wizards jump quickly.";
+    let nonAlphabetRegex = /\W/g; // Change this line
+    let result = quoteSample.match(nonAlphabetRegex).length;
+
+## 20.Match All Numbers
+    let movieName = "2001: A Space Odyssey";
+    let numRegex = /\d/g; // Change this line
+    let result = movieName.match(numRegex).length;
+
+## 21.Match All Non-Numbers
+    let movieName = "2001: A Space Odyssey";
+    let noNumRegex = /\D/g; // Change this line
+    console.log(movieName.match(noNumRegex).length);
+
+## 22.Restrict Possible Usernames
+    let username = "JackOfAllTrades";
+    let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+    let result = userCheck.test(username);
+
+## 23. Match Whitespace
+    let sample = "Whitespace is important in separating words";
+    let countWhiteSpace = /\s/g; // Change this line
+    let result = sample.match(countWhiteSpace);
+
+## 24. Match Non-Whitespace Characters
+    let sample = "Whitespace is important in separating words";
+    let countNonWhiteSpace = /\S/g; // Change this line
+    let result = sample.match(countNonWhiteSpace);
+
+## 25. Specify Upper and Lower Number of Matches
+    let ohStr = "Ohhh no";
+    let ohRegex = /Oh{3,6}\sno/; // Change this line
+    let result = ohRegex.test(ohStr);
+

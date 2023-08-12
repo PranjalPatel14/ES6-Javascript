@@ -139,3 +139,27 @@
     let result = favRegex.test(favWord);
 
 ## 29. Positive and Negative Lookahead 
+    let sampleWord = "astronaut";
+    let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+    let result = pwRegex.test(sampleWord);
+
+## 30. Check For Mixed Grouping of Characters
+    let myString = "Eleanor Roosevelt";
+    let myRegex = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/;
+    let result = myRegex.test(myString);
+
+## 31. Reuse Patterns Using Capture Groups  
+    let repeatNum = "42 42 42";
+    let reRegex = /^(\d+) \1 \1$/;
+    let result = reRegex.test(repeatNum);
+
+## 32. Use Capture Groups to Search and Replace
+    let str = "one two three";
+    let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+    let replaceText = "$3 $2 $1"; // Change this line
+    let result = str.replace(fixRegex, replaceText);
+
+## 33. Remove Whitespace from Start and End
+    let repeatNum = "42 42 42";
+    let reRegex = /^(\d+) \1 \1$/;
+    let result = reRegex.test(repeatNum);

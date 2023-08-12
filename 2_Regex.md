@@ -122,3 +122,20 @@
     let ohStr = "Ohhh no";
     let ohRegex = /Oh{3,6}\sno/; // Change this line
     let result = ohRegex.test(ohStr);
+
+## 26. Specify Only the Lower Number of Matches
+    let haStr = "Hazzzzah";
+    let haRegex = /Haz{4,}ah/g; // Change this line
+    let result = haRegex.test(haStr);
+
+## 27. Specify Exact Number of Matches 
+    let timStr = "Timmmmber";
+    let timRegex = /Tim{4}ber/; // Change this line
+    let result = timRegex.test(timStr);
+
+## 28. Check for All or None    
+    let favWord = "favorite";
+    let favRegex = /favou?rite/; // Change this line
+    let result = favRegex.test(favWord);
+
+## 29. Positive and Negative Lookahead 

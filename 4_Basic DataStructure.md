@@ -37,4 +37,35 @@
 
     console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
 
-## 7.
+## 7.Copy Array Items Using slice()
+    function forecast(arr) {
+        let arr1 = arr.slice(2, 4);
+        return arr1;
+    }
+    console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+## 8.Copy an Array with the Spread Operator
+    function copyMachine(arr, num) {
+    let newArr = [];
+    while (num >= 1) {
+        // Only change code below this line
+        newArr.push([...arr]);
+        // Only change code above this line
+    num--;
+    }
+    return newArr;
+}
+
+console.log(copyMachine([true, false, true], 2));
+
+## 9.Combine Arrays with the Spread Operator
+    function spreadOut() {
+    let fragment = ['to', 'code'];
+    let sentence = ['learning',...fragment,'is','fun']; // Change this line
+    return sentence;
+}
+
+console.log(spreadOut());
+
+## 10.Check For The Presence of an Element With indexOf()
+    

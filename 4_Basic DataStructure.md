@@ -89,3 +89,15 @@ console.log(spreadOut());
         return newArr;
     }
     console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+
+## 12. Create complex multi-dimensional arrays
+    let myNestedArray = [
+        ['unshift', false, 1, 2, 3, 'complex', 'nested',['deep']],
+        ['loop', 'shift', 6, 7, 1000, 'method'],
+        ['concat', false, true, 'spread', 'array'],
+        ['mutate', 1327.98, 'splice', 'slice', 'push', [['deeper']]],
+        ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[['deepest']]]]
+    ];
+
+## 13. Add Key-Value Pairs to JavaScript Objects
+    

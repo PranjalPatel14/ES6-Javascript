@@ -100,4 +100,6 @@ console.log(spreadOut());
     ];
 
 ## 13. Add Key-Value Pairs to JavaScript Objects
+    const = "Hello";
+    console.log("Hello world");
     

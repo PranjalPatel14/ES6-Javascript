@@ -78,3 +78,58 @@
 
     const a = confirmEnding("Bastian", "n");
     console.log(a);
+
+## 7. Repeat a String Repeat a String
+    function repeatStringNumTimes(str, num) {
+    let b = "";
+    for(let i=0;i<num;i++){
+        b += str;
+    }
+    return b;
+    }
+
+    const a = repeatStringNumTimes("abc", 3);
+    console.log(a);
+
+## 8. Truncate a String
+    function truncateString(str, num) {
+    if(str.length > num){
+        return str.slice(0,num) + "..."
+    }
+    else{
+        return str
+    }
+    }
+
+    truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+## 9. Finders Keepers
+    function findElement(arr, func) {
+    let num = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        num = arr[i];
+        if (func(num)) {
+        return num;
+        }
+    }
+
+    return undefined;
+    }
+
+    findElement([1, 2, 3, 4], num => num % 2 === 0);
+
+## 10. Boo who
+    function booWho(bool) {
+    if(bool === true || bool === false){
+        bool = true;
+        return bool;
+    }else{
+        bool = false;
+        return bool;
+    }
+    }
+
+    booWho(null);
+
+## 11.

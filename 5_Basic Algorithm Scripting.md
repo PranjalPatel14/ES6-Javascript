@@ -160,4 +160,13 @@
 
     console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
 
-## 13. 
+## 13. Falsy Bouncer
+    function bouncer(arr) {
+    const filteredArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) filteredArr.push(arr[i]);
+    }
+    return filteredArr;
+    }
+
+    console.log(bouncer([7, "ate", "", false, 9]));

@@ -132,4 +132,32 @@
 
     booWho(null);
 
-## 11.
+## 11. Title Case a Sentence
+    function titleCase(str) {
+    const newTitle = str.split(" ");
+    const updatedTitle = [];
+    for(let st in newTitle){
+        updatedTitle[st] = newTitle[st][0].toUpperCase() + newTitle[st].slice(1).toLowerCase();
+    }
+    return updatedTitle.join(" ");
+    }
+
+    titleCase("I'm a little tea pot");
+
+## 12. Slice and Splice
+    function frankenSplice(arr1, arr2, n) {
+    let arr1_len = arr1.length;
+    let arr2_len = arr2.length;
+    let tot_len = arr1_len + arr2_len;
+    let localArray = arr2.slice();
+    for(let i=0;i<arr1.length;i++)
+    {
+        localArray.splice(n,0,arr1[i]);
+        n++;
+    }
+    return localArray;
+    }
+
+    console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+## 13. 
